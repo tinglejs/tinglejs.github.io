@@ -505,7 +505,6 @@ button.btn.btn-white:hover {
 body {
   padding: 100px 0 0 0;
   background-image: linear-gradient(to right, #ff9b19, #ff6d00);
-  overflow: hidden;
 }
 .black-text {
   color: #8c4d1d;
@@ -594,6 +593,51 @@ body {
 }
 .feature-below .buttons .btn {
   margin-right: 10px;
+}
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    overflow: auto;
+  }
+  .row {
+    width: auto;
+  }
+  .row .cell {
+    float: none;
+    width: auto;
+  }
+  .row .cell-2 {
+    padding: 0;
+  }
+  .phone {
+    background: none;
+    width: auto;
+    height: auto;
+  }
+  .phone > .inner {
+    width: auto;
+    margin: 0;
+    padding: 0 10px;
+    height: auto;
+    border: none;
+    padding-bottom: 2em;
+  }
+  .feature-list {
+    padding: 0 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .feature-list dt {
+    font-size: 20px;
+  }
+  .feature-list dd {
+    font-size: 14px;
+  }
+  .feature-below {
+    padding: 0 20px;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=page-home.css.map*/
