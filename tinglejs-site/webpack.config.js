@@ -1,5 +1,6 @@
 'use strict';
 
+let path = require('path')
 let OpenBrowserPlugin = require('open-browser-webpack-plugin')
 let ExtractTextPlugin = require('extract-text-webpack-plugin')
 let extractStylus = new ExtractTextPlugin('[name].css')
@@ -12,7 +13,7 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: '../' + __dirname,
+    path: path.join(__dirname, '../'),
     publicPath: '/'
   },
   devtool: 'source-map',
