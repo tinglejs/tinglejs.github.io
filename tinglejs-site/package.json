@@ -1,0 +1,31 @@
+{
+  "name": "tinglejs.org",
+  "version": "1.0.0",
+  "description": "tinglejs.org",
+  "scripts": {
+    "dev": "webpack-dev-server --content-base src --inline --hot",
+    "build": "webpack && cp ./src/*.html ../ && cp ./src/*.png ../ && cp -R ./src/lib ../lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinglejs/tinglejs.org.git"
+  },
+  "author": "zhangyang",
+  "bugs": {
+    "url": "https://github.com/tinglejs/tinglejs.org/issues"
+  },
+  "homepage": "https://github.com/tinglejs/tinglejs.org#readme",
+  "dependencies": {
+    "normalize.css": "^4.0.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "image-webpack-loader": "^1.6.3",
+    "open-browser-webpack-plugin": "0.0.2",
+    "style-loader": "^0.13.1",
+    "stylus-loader": "^1.5.1",
+    "webpack": "^1.12.14"
+  }
+}

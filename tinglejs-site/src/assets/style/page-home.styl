@@ -1,0 +1,83 @@
+@require "./common";
+
+body
+  padding 100px 0 0 0
+  background-image linear-gradient(to right, body-gradient-start, body-gradient-end)
+
+.black-text
+  color color-black
+
+.text-small
+  font-size 14px
+
+.row
+  width 1000px
+  margin 0 auto
+  overflow hidden
+  .cell
+    float left
+    width 50%
+  .cell-2
+    padding-left 50px
+
+.phone
+  width phone-width
+  height phone-height
+  background url(../img/iphone6-white.png) center top no-repeat
+  background-size 100%
+  overflow hidden
+  > .inner
+    width phone-inner-width
+    height phone-inner-height
+    margin phone-inner-margin auto 0
+    background-color #FFF
+    border 1px solid #E2E2E2
+    overflow hidden
+    text-align center
+  .logo
+    border 1px solid #e2e2e2
+    border-radius 16px
+    background-size 70%
+    margin 25% auto 40px
+  h1
+    color main-color
+    font-weight normal
+    margin-bottom 50px
+  p
+    font-size 16px
+    color color-gray
+    letter-spacing 4px
+
+.feature-list
+  color #fff
+  letter-spacing 2px
+  margin-top 50px
+  dt
+    font-size 24px
+    margin-bottom 14px
+    padding-left 70px
+    position relative
+  dd
+    font-size 18px
+    -webkit-margin-start 0
+    margin-bottom 30px
+    padding-left 70px
+  .iconfont
+    font-size 50px
+    width 60px
+    height 60px
+    position absolute
+    left 0
+    top 0
+
+.feature-below
+  padding-left 70px
+  padding-top 50px
+  .text-block
+    margin 20px 0
+  .buttons
+    margin 30px 0 50px
+    .btn
+      margin-right 10px
+
+@require "./page-home-mobile";

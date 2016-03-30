@@ -1,0 +1,39 @@
+@require 'reset.styl';
+
+main-color = #ff7605
+color-gray = #999
+color-black = #8c4d1d
+
+body-gradient-start = #FF9B19
+body-gradient-end = #FF6D00
+
+phone-width = 500px
+phone-height = 2000 * phone-width / 1066px
+phone-inner-width = phone-width / 1.42px
+phone-inner-height = phone-width * 1.255px
+phone-inner-margin = phone-width / 5px
+
+.logo
+  background url(../img/tingle-logo.svg) center center no-repeat
+  background-size contain
+  width 100px
+  height 100px
+  text-indent -9999px
+
+.btn,
+a.btn,
+button.btn
+  border-radius 6px
+  display inline-block
+  text-decoration none
+  font-size 18px
+  border 1px solid #fff
+  padding .5em .8em
+  transition .2s ease
+  .iconfont
+    font-size 24px
+  &.btn-white
+    color #fff
+    &:hover
+      background-color #fff
+      color main-color
