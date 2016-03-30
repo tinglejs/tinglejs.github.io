@@ -4,7 +4,7 @@
   "description": "tinglejs.org",
   "scripts": {
     "dev": "webpack-dev-server --content-base src --inline --hot",
-    "build": "webpack && cp ./src/*.html ../ && cp ./src/*.png ../ && cp -R ./src/lib ../lib"
+    "build": "webpack && cp ./src/*.html ../ && cp ./src/*.png ../ && cp -R ./src/lib ../"
   },
   "repository": {
     "type": "git",
